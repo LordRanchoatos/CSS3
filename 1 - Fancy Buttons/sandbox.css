@@ -175,6 +175,7 @@
     /* GRADIENT BUTTON 1 */
     .gradient-button-1 {
         position: relative;
+        z-index: 1;
         padding: 20px 40px;
         font-size: 1.4rem;
         box-sizing: border-box;
@@ -189,4 +190,24 @@
     .gradient-button-1:hover {
         color: white;
         background-image: linear-gradient(to top right, orangered, yellow);
+    }
+
+    .gradient-button-2 {
+        position: relative;
+        z-index: 1;
+        padding: 20px 40px;
+        font-size: 1.4rem;
+        box-sizing: border-box;
+        background-color: #e7eef1;
+        border: solid 4px transparent;
+        border-image: linear-gradient(to right, orangered, transparent);
+        border-image-slice: 1;
+        color: orangered;
+        animation: all 0.3 ease;
+    }
+
+    .gradient-button-2:hover {
+        color: white;
+        background-image: linear-gradient(to right, orangered, transparent);
+        border-right-style: none;
     }
