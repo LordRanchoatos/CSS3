@@ -92,3 +92,39 @@
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+
+.register-block::before,
+.register-block::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: white;
+    border: solid 1px #e6e6e6;
+    border-radius: 5px;
+    -webkit-transform: scale(0.9) translate(0,0);
+            transform: scale(0.9) translate(0,0);
+    transition: all 0.3s ease;
+}
+
+.register-block::after {
+    transition-delay: 0.05s;
+}
+
+.register-block:hover::before {
+    -webkit-transform: scale(0.96) translate(0,16px);
+            transform: scale(0.96) translate(0,16px);
+    z-index: -1;
+}
+
+.register-block:hover::after {
+    -webkit-transform: scale(0.92) translate(0,32px);
+            transform: scale(0.92) translate(0,32px);
+    z-index: -2;
+}
